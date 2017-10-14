@@ -1,0 +1,107 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.box {
+	width: 320px;
+	height: 568px;
+	/*盒子居中*/
+	margin: 0 auto;
+	background: gray;
+
+	position: relative;
+}
+#beginDiv {
+	height: 568px;
+	background: url("image/开始背景.png") no-repeat;
+	/*display: none;*/
+}
+#beginButton {
+	width: 150px;
+	height: 30px;
+	border: solid 1px black;
+	position: absolute;
+
+	left: 85px;
+	top: 470px;
+	/*去掉轮廓线*/
+	outline-style: none;
+	/*设置边框角度*/
+	border-radius: 30px;
+
+}
+#planeDiv {
+	height: 568px;
+	background: url("image/background_1.png");
+	display: none;
+}
+#planeDiv img {
+	/*设置一个绝对定位*/
+	position: absolute;
+	z-index: 1;
+}
+/*暂停界面*/
+#suspendDiv {
+	width: 150px;
+	height: 110px;
+	/*background: red;*/
+	position: absolute;
+	top: 210px;
+	left: 85px;
+	z-index: 3;
+	display: none;
+}
+#suspendDiv button {
+	width: 150px;
+	height: 30px;
+	margin-top: 20px;
+	border: 1px solid black;
+	border-radius: 30px;
+	outline-style: none;
+}
+#endDiv {
+	position: absolute;
+	top: 210px;
+	left: 75px;
+	border: 1px solid black;
+	border-radius: 5px;
+	text-align: center;
+	z-index: 3;
+	background: #d7ddde;
+	display: none;
+}
+.planeText {
+	width: 160px;
+	height: 30px;
+	line-height: 30px;
+	font-style: bold;
+}
+#planeScore{
+	width: 160px;
+	height: 80px;
+	line-height: 80px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	font-style: bold;
+}
+#endDiv div {
+	width: 160px;
+	height: 50px;
+}
+#endDiv div button {
+	width: 90px;
+	height: 30px;
+	border-radius: 30px;
+	border: 1px solid gray;
+	outline-style: none;
+	margin-top: 10px;
+}
+#scoreDiv {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	font-weight: bold;
+	font-size: 20px;
+}
